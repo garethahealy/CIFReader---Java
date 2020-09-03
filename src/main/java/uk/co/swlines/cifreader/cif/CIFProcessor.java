@@ -110,7 +110,7 @@ public class CIFProcessor {
 			for(String filePath : filePaths) {
 				process(filePath);
 			}
-			
+
 			try {
 				System.out.println("INFO: Completing timetable update transactions");
 				database.finalise();
