@@ -35,7 +35,7 @@ import uk.co.swlines.cifreader.exceptions.LogicException;
 public class CIFProcessor {
 	
 	private CIFSchedule schedule = null;
-	private CIFDatabase database = null;
+	private Database database = null;
 	
 	private ArrayList<CIFSchedule> schedulesInsert = null;
 	private ArrayList<CIFSchedule> schedulesDelete = null;
@@ -76,7 +76,8 @@ public class CIFProcessor {
 	public void process() {
 		if(filePaths != null) {
 			try {
-				database = new CIFDatabase();
+				database = new SystemOutDatabase();
+				database.init();
 			} catch (SQLException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();

@@ -42,15 +42,15 @@ import uk.co.swlines.cifreader.exceptions.LogicException;
 import org.apache.commons.configuration.ConfigurationException;
 import org.apache.commons.configuration.XMLConfiguration;
 
-public class CIFDatabase extends DatabaseMySQL {
-	
-	public CIFDatabase() throws SQLException, InstantiationException, IllegalAccessException, ClassNotFoundException, ConfigurationException {
+public class CIFDatabase extends DatabaseMySQL implements Database {
+
+	public void init() throws SQLException, InstantiationException, IllegalAccessException, ClassNotFoundException, ConfigurationException {
 		XMLConfiguration configuration = null;
-		
-		configuration = new XMLConfiguration(!CIFReader.inDevelopmentEnviroment() ? "cifreader_config.xml" : "src/resources/configuration.xml");		
-		
-		createConnection(String.format("jdbc:mysql://%s/%s", configuration.getString("database.url"), 
-				configuration.getString("database.database")), 
+
+		configuration = new XMLConfiguration(!CIFReader.inDevelopmentEnviroment() ? "cifreader_config.xml" : "src/resources/configuration.xml");
+
+		createConnection(String.format("jdbc:mysql://%s/%s", configuration.getString("database.url"),
+				configuration.getString("database.database")),
 				configuration.getString("database.username"), configuration.getString("database.password"));
 	}
 	
