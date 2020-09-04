@@ -407,4 +407,15 @@ public abstract class CIFLocation {
 		
 		return a;
 	}
+
+	@Override
+	public String toString() {
+		return "CIFLocation{" +
+				"tiploc='" + tiploc + '\'' +
+				", platform='" + platform + '\'' +
+				", tiploc_instance=" + tiploc_instance +
+				", public_call=" + public_call +
+				", actual_call=" + actual_call +
+				'}';
+	}
 }

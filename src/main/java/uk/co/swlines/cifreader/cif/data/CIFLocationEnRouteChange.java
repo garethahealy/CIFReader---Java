@@ -171,6 +171,37 @@ public class CIFLocationEnRouteChange {
 	public char getReservations() {
 		return reservations;
 	}
-	
-	
+
+	@Override
+	public String toString() {
+		return "CIFLocationEnRouteChange{" +
+				"category='" + category + '\'' +
+				", train_identity='" + train_identity + '\'' +
+				", headcode='" + headcode + '\'' +
+				", service_code='" + service_code + '\'' +
+				", power_type='" + power_type + '\'' +
+				", timing_load='" + timing_load + '\'' +
+				", speed='" + speed + '\'' +
+				", catering_code='" + catering_code + '\'' +
+				", service_branding='" + service_branding + '\'' +
+				", uic='" + uic + '\'' +
+				", rsid='" + rsid + '\'' +
+				", oc_b=" + oc_b +
+				", oc_c=" + oc_c +
+				", oc_d=" + oc_d +
+				", oc_e=" + oc_e +
+				", oc_g=" + oc_g +
+				", oc_m=" + oc_m +
+				", oc_p=" + oc_p +
+				", oc_q=" + oc_q +
+				", oc_r=" + oc_r +
+				", oc_s=" + oc_s +
+				", oc_y=" + oc_y +
+				", oc_z=" + oc_z +
+				", portion_id=" + portion_id +
+				", train_class=" + train_class +
+				", sleeper=" + sleeper +
+				", reservations=" + reservations +
+				'}';
+	}
 }

@@ -84,4 +84,21 @@ public class CIFHeader {
 	public boolean isFullExtract() {
 		return fullExtract;
 	}
+
+	@Override
+	public String toString() {
+		return "CIFHeader{" +
+				"mainframe_identity='" + mainframe_identity + '\'' +
+				", user_identity='" + user_identity + '\'' +
+				", user_extract_date='" + user_extract_date + '\'' +
+				", extract_date='" + extract_date + '\'' +
+				", extract_time='" + extract_time + '\'' +
+				", file_ref='" + file_ref + '\'' +
+				", last_file_ref='" + last_file_ref + '\'' +
+				", cif_version='" + cif_version + '\'' +
+				", user_extract_start_date='" + user_extract_start_date + '\'' +
+				", user_extract_end_date='" + user_extract_end_date + '\'' +
+				", fullExtract=" + fullExtract +
+				'}';
+	}
 }

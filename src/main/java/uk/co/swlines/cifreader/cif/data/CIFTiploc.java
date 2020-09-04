@@ -60,4 +60,16 @@ public class CIFTiploc {
 	public String getDescription() {
 		return description;
 	}
+
+	@Override
+	public String toString() {
+		return "CIFTiploc{" +
+				"tiploc='" + tiploc + '\'' +
+				", nlc='" + nlc + '\'' +
+				", tps_description='" + tps_description + '\'' +
+				", stanox='" + stanox + '\'' +
+				", crs='" + crs + '\'' +
+				", description='" + description + '\'' +
+				'}';
+	}
 }

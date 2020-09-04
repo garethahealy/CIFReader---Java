@@ -60,4 +60,18 @@ public class CIFLocationTerminus extends CIFLocation implements CIFLocationArriv
 	public String getPath() {
 		return path;
 	}
+
+	@Override
+	public String toString() {
+		return "CIFLocationTerminus{" +
+				"path='" + path + '\'' +
+				", arrival=" + arrival +
+				", public_arrival=" + public_arrival +
+				", tiploc='" + tiploc + '\'' +
+				", platform='" + platform + '\'' +
+				", tiploc_instance=" + tiploc_instance +
+				", public_call=" + public_call +
+				", actual_call=" + actual_call +
+				'}';
+	}
 }

@@ -126,4 +126,26 @@ public class CIFLocationIntermediate extends CIFLocation implements CIFLocationA
 	public CIFLocationEnRouteChange getChangeRecord() {
 		return change_record;
 	}
+
+	@Override
+	public String toString() {
+		return "CIFLocationIntermediate{" +
+				"change_record=" + change_record +
+				", line='" + line + '\'' +
+				", path='" + path + '\'' +
+				", allowance_engineering=" + allowance_engineering +
+				", allowance_pathing=" + allowance_pathing +
+				", allowance_performance=" + allowance_performance +
+				", arrival=" + arrival +
+				", public_arrival=" + public_arrival +
+				", departure=" + departure +
+				", public_departure=" + public_departure +
+				", pass=" + pass +
+				", tiploc='" + tiploc + '\'' +
+				", platform='" + platform + '\'' +
+				", tiploc_instance=" + tiploc_instance +
+				", public_call=" + public_call +
+				", actual_call=" + actual_call +
+				'}';
+	}
 }

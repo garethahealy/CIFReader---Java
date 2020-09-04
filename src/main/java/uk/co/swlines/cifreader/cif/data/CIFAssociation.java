@@ -126,4 +126,28 @@ public class CIFAssociation {
 	public boolean isRuns_su() {
 		return runs_su;
 	}
+
+	@Override
+	public String toString() {
+		return "CIFAssociation{" +
+				"main_train_uid='" + main_train_uid + '\'' +
+				", associated_train_uid='" + associated_train_uid + '\'' +
+				", date_from='" + date_from + '\'' +
+				", date_to='" + date_to + '\'' +
+				", category='" + category + '\'' +
+				", location='" + location + '\'' +
+				", date_indicator=" + date_indicator +
+				", location_main_suffix=" + location_main_suffix +
+				", location_associated_suffix=" + location_associated_suffix +
+				", association_type=" + association_type +
+				", stp_indicator=" + stp_indicator +
+				", runs_mo=" + runs_mo +
+				", runs_tu=" + runs_tu +
+				", runs_we=" + runs_we +
+				", runs_th=" + runs_th +
+				", runs_fr=" + runs_fr +
+				", runs_sa=" + runs_sa +
+				", runs_su=" + runs_su +
+				'}';
+	}
 }

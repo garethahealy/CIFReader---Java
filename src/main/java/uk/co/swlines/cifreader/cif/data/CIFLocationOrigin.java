@@ -85,4 +85,21 @@ public class CIFLocationOrigin extends CIFLocation implements CIFLocationDepart 
 	public int getAllowance_performance() {
 		return allowance_performance;
 	}
+
+	@Override
+	public String toString() {
+		return "CIFLocationOrigin{" +
+				"line='" + line + '\'' +
+				", allowance_engineering=" + allowance_engineering +
+				", allowance_pathing=" + allowance_pathing +
+				", allowance_performance=" + allowance_performance +
+				", departure=" + departure +
+				", public_departure=" + public_departure +
+				", tiploc='" + tiploc + '\'' +
+				", platform='" + platform + '\'' +
+				", tiploc_instance=" + tiploc_instance +
+				", public_call=" + public_call +
+				", actual_call=" + actual_call +
+				'}';
+	}
 }
